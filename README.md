@@ -1,26 +1,17 @@
 # Fresh Clean Home — web stranica
 
-Statični sajt (HTML/CSS/JS), spreman za GitHub Pages.
+Statični sajt spreman za GitHub Pages. **Sve datoteke su u jednom nivou (nema foldera)**, tako da linkovi rade kako god se uploaduju.
 
 ## Objava na GitHub Pages
-1. Napravi novi repozitorij na GitHubu (npr. `fresh-clean-home`).
-2. Uploaduj **sadržaj ovog foldera** (ne sam folder) u korijen repozitorija — `index.html` mora biti u korijenu.
-3. Settings → Pages → Source: *Deploy from a branch* → Branch: `main` / `(root)` → Save.
-4. Za par minuta sajt je na `https://<korisnik>.github.io/fresh-clean-home/`.
+1. Napravi repozitorij (npr. `fresh-clean-home`).
+2. Add file → Upload files → označi i prevuci **sve datoteke** iz ovog foldera → Commit changes.
+3. Settings → Pages → Deploy from a branch → `main` / `(root)` → Save.
+4. Sajt je za par minuta na `https://<korisnik>.github.io/fresh-clean-home/`.
 
-## Struktura
+## Datoteke
 - `index.html` — početna stranica
-- `usluge/` — 7 podstranica usluga + `usluge.css`
-- slike (`.jpg`, `.png`) u korijenu
+- 7 podstranica usluga (`generalno-ciscenje-objekata.html`, `dubinsko-pranje-namjestaja.html`, … ) + `usluge.css`
+- slike `.jpg` / `.png`
 
 ## Galerija „Naši radovi"
-Slike sa terena se dodaju u `index.html`, u listu `RADOVI`:
-```js
-const RADOVI=[
-  {img:'radovi/1.jpg', title:'Dubinsko pranje kauča'},
-];
-```
-(slike staviti u folder `radovi/`).
-
-## Vlastita domena (opcionalno)
-U Settings → Pages → Custom domain upiši domenu i kod registra domene postavi DNS zapise prema GitHub uputstvu.
+U `index.html` popuni listu `RADOVI`, npr. `{img:'rad1.jpg', title:'Dubinsko pranje kauča'}`, a sliku `rad1.jpg` uploaduj pored ostalih.

@@ -483,7 +483,7 @@
   ];
   const arrow='<svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#9ec93a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   document.getElementById('cards').innerHTML=SERVICES.map(s=>`
-    <a class="card" href="usluge/${s.slug}.html">
+    <a class="card" href="${s.slug}.html">
       <div class="thumb"><img src="${s.img}" alt="${s.title}" loading="lazy" onerror="this.style.display='none'"></div>
       <div class="body"><h3>${s.title}</h3><p>${s.desc}</p><span class="more">Saznaj više ${arrow}</span></div>
     </a>`).join('');
